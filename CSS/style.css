@@ -1,0 +1,79 @@
+body{
+    background-color: #f8ecde;
+}
+.container .row h1{
+    font-family: 'Pacifico', cursive;
+    margin-top: 60px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    font-size: 56px;
+}
+.container .row h1::after{
+    content:'';
+    width: 100%;
+    height: 50%;
+    background-color: #fec260;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: .5s;
+}
+.container .row h1:hover::after{
+    height: 100%;
+}
+
+.dot{
+    border:1px dotted black ;
+    margin-top:50px ;
+    margin-bottom:50px ;
+}
+h2{
+    text-align: center;
+    color: #3ca55c;
+    
+    
+}
+h2 i{
+    padding: 10px;
+}
+.form .input-form label{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+.form .input-form label i{
+    padding-right: 10px;
+}
+.form .botton{
+    display: flex;
+    justify-content: center;
+}
+.form button{
+    border: 0;
+    border-radius: 6px;
+    padding: 10px 25px;
+    font-size: 19px;
+    color: white;
+    background-color: rgb(225, 10, 10);
+    transition: .5s;
+}
+.form button:hover{
+    background-color: rgb(182, 8, 8);
+}
+.table tr td button{
+    color: white;
+    font-size: 17px;
+}
+.table tr td button i{
+    padding-right: 6px;
+}
+.btn-visit{
+    background-color: #9eb23b;
+    transition: .5s;
+}
+.btn-visit:hover{
+    background-color: #6e8018;
+    color: white;
+}
